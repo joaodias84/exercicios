@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Pessoa</title>
+</head>
+<body>
+    <script>
+        // Dados do usuário
+        let nome = prompt("Informe o nome da pessoa:");
+        let salario = parseFloat(prompt("Informe o salário da pessoa:"));
+        let idade = parseInt(prompt("Informe a idade da pessoa:"));
+        let possuiDiploma = confirm("A pessoa possui diploma? Clique em OK para 'Sim' ou Cancelar para 'Não'.");
+
+        // Cadastro final
+        document.write("<h1>Cadastro de Pessoa</h1>");
+        document.write("<p><strong>Nome:</strong> " + nome + "</p>");
+        document.write("<p><strong>Salário:</strong> R$ " + salario.toFixed(2) + "</p>");
+        document.write("<p><strong>Idade:</strong> " + idade + " anos</p>");
+        document.write("<p><strong>Possui diploma:</strong> " + (possuiDiploma ? "Sim" : "Não") + "</p");
+    </script>
+</body>
+</html>
